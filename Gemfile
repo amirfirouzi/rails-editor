@@ -46,10 +46,13 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-gem 'jquery-rails' # Use jquery as the JavaScript library
+gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
 gem 'devise'
 gem 'sprockets-rails'
-gem 'bootstrap', '~> 4.0.0'
+gem 'bootstrap', '~> 4.1.1'
 gem 'tinymce-rails'
 gem 'tinymce-rails-langs'
 gem "wysiwyg-rails"
+gem 'autoprefixer-rails', '~> 6.0.3'
+gem 'font-awesome-sass', '~> 4.7'
+gem 'coreui-rails', '~> 1.1'

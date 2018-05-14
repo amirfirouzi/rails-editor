@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
-  root to: "home_controller#index", :defaults => {'locale' => 'fa'}
-  get 'fa/home/index' => 'home_controller#index', :defaults => {'locale' => 'fa'}
-  get 'fa/home/show' => 'home_controller#show', :defaults => {'locale' => 'fa'}
+  get 'admin_controller/index'
+  root to: "home_controller#index"
+  get 'home/index' => 'home#index'
+  get 'home/show' => 'home#show'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  #
+  get 'admin/index' => 'admin#index'
 end
